@@ -1,3 +1,4 @@
+//storing the information in temporary memory
 var http = require("http");
 var url = require("url");
 var parsedUrl  = url.parse('/itemsAvailable?model=value',true)
