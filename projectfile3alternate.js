@@ -80,3 +80,6 @@ res.end();
 })
 }}
 ).listen(3000)
+//using too many read and writing of files can slow the runtime of the code so store the parsed json data into a temporary variable and use it  inside the http call request .
+//if the logic is present inside the http request it will increase the browser time and the response delays
+//avoid logics inside the http function and use it just to bind it with the server
