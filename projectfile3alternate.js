@@ -35,6 +35,7 @@ console.log(Obj);
 	
 var itemsAvailable  =[
 {
+	
 	model : 'nokia',
 	available : 10
 },
