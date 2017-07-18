@@ -4,31 +4,32 @@ var fs= require("fs");
 describe("reset function",function(){
 	it("reading file",function(){
 		fs.readFile('./filenew.js','utf8',function(err,data){
-			if(err) throw 'error occured';
-			else JSON.parse(data);
-			if(Code.reset.Obj[Code.value1]===undefined)
-			{
-				it("writing file",function()
+			if(err){ throw 'error occured';}
+			var Obj = Code.reset.Obj;
+	
+	it("writing file",function()
 				{
 					fs.writeFile('./filenew.js',Code.reset.w,'utf8',function(err,data){
 						if(err)throw 'error writing file';})
 				})
 				
-			}
+			
 		});
 			
 	});
 });
 
 describe('/',function(){
-before(function (done) {
-Code.server.listen(3000,done);
+		before(function (done) {
+		Code.server.listen(3000,done);
 		});
-after(function (done) {
-Code.server.close(done);
+		after(function (done) {
+		Code.server.close(done);
 		});
+
 describe('http request',function(){
 it("starting the request",function(done){
+	
 http.get("http://localhost:3000",function(res)
 {
 	it('checking model type',function(){
